@@ -1,0 +1,60 @@
+import Container from "../container/Container";
+import bg from "../../assets/bannerbg.png";
+import pic from "../../assets/Mayzidpic.JPG";
+import { Typewriter } from "react-simple-typewriter";
+import { useEffect, useState } from "react";
+export default function Banner() {
+  const [showTypewriter, setShowTypewriter] = useState(false);
+
+  useEffect(() => {
+    setShowTypewriter(true);
+  }, []);
+  return (
+    <>
+      <Container>
+        <div
+          data-aos="fade-up"
+          className="mt-7  bg-center  bg-no-repeat pt-[137px] flex flex-col justify-center items-center pb-[105px]"
+          style={{ backgroundImage: `url(${bg})` }}
+        >
+          <img
+            src={pic}
+            alt="#img"
+            className="w-[222px] h-[222px] rounded-full bg-fuchsia-600 object-cover"
+          />
+          <h1 className="font-poppins font-bold text-[63px] text-[#484E53]">
+            Kazi Mayzid
+          </h1>
+          <p className="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent font-poppins font-semibold text-[26px]">
+            <Typewriter
+              words={[" MERN Stack Developer"]}
+              loop={true}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1500}
+            />
+          </p>
+
+          <div className="font-poppins font-medium text-[16px] sm:text-[19px] leading-[28px] sm:leading-[30px] text-[#484E53] text-center max-w-[90%] sm:max-w-[790px] mt-3">
+            {showTypewriter && (
+              <Typewriter
+                words={[
+                  "Hi, I’m Kazi Maizid, a curious and driven individual passionate about technology and digital innovation. I enjoy learning, solving problems, and creating meaningful solutions. Adaptable and collaborative, I thrive in dynamic environments and strive for growth and excellence in every project I take on, always aiming to make a positive impact....",
+                ]}
+                loop={1}
+                cursor={false}
+                typeSpeed={10}
+              />
+            )}
+          </div>
+
+          <button className=" font-inter font-medium text-[15px] text-[#484E53] px-[18px] py-[13px] border-[.5px] cursor-pointer mt-[40px] rounded-full">
+            Contact Me
+          </button>
+        </div>
+      </Container>
+    </>
+  );
+}
