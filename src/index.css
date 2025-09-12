@@ -6,8 +6,24 @@
 @theme {
   --font-poppins: "Poppins", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --color-detailsColor: #E1E1E1;
-  --color-hoverColor: #4FC3F7;
+  --color-detailsColor: #1C1E53;
+  --color-hoverColor: #484E5380;
+  --color-navtext: #050505;
+  --color-bg: #E0E8F6;
+  --color-borderColor: #484E5380;
+  --color-headingColor: #484E53;
 }
 
 
+@layer theme {
+  .dark {
+    --color-navtext: #C1C1C1; 
+    --color-bg: #1A1A1A;
+    --color-dark-bg: #ffffff;
+    --color-borderColor: rgba(79, 194, 247, 0.5);
+    --color-hoverColor: rgba(79, 194, 247, 0.5);
+    --color-headingColor: #FFFFFF;
+    --color-detailsColor: #E1E1E1;
+
+  }
+}
