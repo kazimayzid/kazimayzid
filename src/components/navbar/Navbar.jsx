@@ -51,7 +51,7 @@ export default function Navbar({ dark, setDark }) {
             </button>
             <div className="flex items-center gap-2">
               <span className="text-sm text-navtext hidden sm:block">
-                {dark ? "Dark" : "Light"}
+                {dark ? "Light" : "Dark"}
               </span>
               <button
                 onClick={() => setDark(!dark)}

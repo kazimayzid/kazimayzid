@@ -3,9 +3,10 @@ import Navbar from "./components/navbar/Navbar";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Banner from "./components/banner/banner";
+import Banner from "./components/banner/Banner";
 import About from "./components/about/About";
-import Scroll from "./components/scroll/scroll";
+import Scroll from "./components/scroll/Scroll";
+
 function App() {
    const [dark, setDark] = useState(() => {
     const storedTheme = localStorage.theme;
@@ -33,7 +34,7 @@ function App() {
         <Navbar dark={dark} setDark={setDark}/>
         <Banner dark={dark}/>
         <About/>
-        <Scroll dark={dark}/>
+        <Scroll/>
       </div>
     </>
   );
