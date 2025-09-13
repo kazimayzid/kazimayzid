@@ -1,11 +1,11 @@
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/navbar/Navbar.jsx";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Banner from "./components/banner/Banner";
-import About from "./components/about/About";
-import Scroll from "./components/scroll/Scroll";
+import Banner from "./components/banner/Banner.jsx";
+import About from "./components/about/About.jsx";
+import Scroll from "./components/scroll/Scroll.jsx";
 
 function App() {
    const [dark, setDark] = useState(() => {
@@ -34,7 +34,7 @@ function App() {
         <Navbar dark={dark} setDark={setDark}/>
         <Banner dark={dark}/>
         <About/>
-        <Scroll/>
+        <Scroll dark={dark}/>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import Container from "../container/Container";
 import bg from "../../assets/bannerbg.png";
 import bg1 from "../../assets/bannerbg1.png"
-import pic from "../../assets/Mayzidpic.JPG";
+import pic from "../../assets/mayzidpic.JPG";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
 
