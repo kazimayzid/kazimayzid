@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Banner from "./components/banner/Banner.jsx";
 import About from "./components/about/About.jsx";
 import Scroll from "./components/scroll/Scroll.jsx";
+import Services from "./components/services/Services.jsx";
 
 function App() {
    const [dark, setDark] = useState(() => {
@@ -34,7 +35,8 @@ function App() {
         <Navbar dark={dark} setDark={setDark}/>
         <Banner dark={dark}/>
         <About/>
-        <Scroll/>
+        <Scroll dark={dark}/>
+        <Services dark={dark}/>
       </div>
     </>
   );
