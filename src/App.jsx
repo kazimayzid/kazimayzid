@@ -34,7 +34,7 @@ function App() {
         <Navbar dark={dark} setDark={setDark}/>
         <Banner dark={dark}/>
         <About/>
-        <Scroll dark={dark}/>
+        <Scroll/>
       </div>
     </>
   );
