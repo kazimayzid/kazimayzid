@@ -1,41 +1,29 @@
-import DotGrid from "../../ui/ParralaxEffect";
+import Particles from "../../ui/Particles";
 import Container from "../container/Container";
 
-export default function Services({ dark }) {
-  const fadeColor = dark ? "26,26,26" : "224,232,246";
-
+export default function Services() {
   return (
-    <div style={{ width: "100%", height: "1400px", position: "relative" }}>
-      {/* DotGrid full width */}
-      <DotGrid
-        dotSize={2}
-        gap={15}
-        baseColor="#5227FF"
-        activeColor="#5227FF"
-        proximity={120}
-        shockRadius={250}
-        shockStrength={5}
-        resistance={750}
-        returnDuration={1.5}
-        maxSpeed={20000}
-        style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
-      />
+    <div className="relative w-full h-[1400px]">
+      {/* Particles background */}
+      <div className="absolute inset-0 z-0">
+        <Particles
+          particleColors={["#524453", "#54578585"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
 
-      {/* Circular fade overlay */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          pointerEvents: "none",
-          background: `radial-gradient(circle, rgba(${fadeColor},0) 90%, rgba(${fadeColor},1) 100%)`,
-        }}
-      />
-
+      {/* Content above particles */}
       <Container className="relative z-10">
-        <div >
+        <div>
           <h2 className="text-4xl font-bold text-headingColor">Our Services</h2>
           <p className="mt-4 text-detailsColor">
-            This is the content inside the container, above the DotGrid background.
+            This is the content inside the container, above the particles background.
           </p>
         </div>
       </Container>
