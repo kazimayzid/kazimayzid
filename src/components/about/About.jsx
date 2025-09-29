@@ -1,6 +1,6 @@
 import Container from "../container/Container";
 
-export default function About() {
+export default function About({dark}) {
   return (
     <>
       <Container>
@@ -11,7 +11,7 @@ export default function About() {
           <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
             About Me
           </h1>
-          <p className="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent font-poppins font-semibold text-[14px] mb-[40px]">
+          <p className={`${dark ? "text-gradient-white" : "text-gradient"} font-poppins font-semibold text-[14px] mb-[40px]`}>
             Get to know me
           </p>
           <div className="flex flex-col justify-center items-center">
@@ -42,8 +42,8 @@ export default function About() {
           </div>
           <div>
             <button className=" font-inter font-medium text-[15px] text-navtext border-borderColor px-[18px] py-[13px] border-[.5px] cursor-pointer mt-[40px] rounded-full">
-            Download Resume
-          </button>
+              Download Resume
+            </button>
           </div>
         </div>
       </Container>

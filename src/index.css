@@ -12,6 +12,7 @@
   --color-bg: #E0E8F6;
   --color-borderColor: #484E5380;
   --color-headingColor: #484E53;
+  --color-bghover: #484E53;
 }
 
 
@@ -24,7 +25,14 @@
     --color-hoverColor: rgba(79, 194, 247, 0.5);
     --color-headingColor: #FFFFFF;
     --color-detailsColor: #E1E1E1;
-
+    --color-bghover: #4FC3F7;
   }
+}
+.text-gradient {
+  @apply bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent;
+}
+
+.text-gradient-white {
+  @apply bg-gradient-to-r from-[#4FC3F7] to-[#F5F5F5] bg-clip-text text-transparent;
 }
 

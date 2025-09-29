@@ -7,6 +7,7 @@ import Banner from "./components/banner/Banner.jsx";
 import About from "./components/about/About.jsx";
 import Scroll from "./components/scroll/Scroll.jsx";
 import Services from "./components/services/Services.jsx";
+import Projects from "./components/projects/Projects.jsx";
 
 function App() {
    const [dark, setDark] = useState(() => {
@@ -34,8 +35,9 @@ function App() {
       <div className="bg-bg">
         <Navbar dark={dark} setDark={setDark}/>
         <Banner dark={dark}/>
-        <About/>
+        <About dark={dark}/>
         <Scroll dark={dark}/>
+        <Projects dark={dark}/>
         <Services dark={dark}/>
       </div>
     </>

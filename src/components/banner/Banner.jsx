@@ -1,6 +1,6 @@
 import Container from "../container/Container";
 import bg from "../../assets/bannerbg.png";
-import bg1 from "../../assets/bannerbg1.png"
+import bg1 from "../../assets/bannerbg1.png";
 import pic from "../../assets/mayzidpic.jpg";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
@@ -17,7 +17,7 @@ export default function Banner({ dark }) {
         <div
           data-aos="fade-up"
           className="mt-7  bg-center  bg-no-repeat pt-[137px] flex flex-col justify-center items-center pb-[105px]"
-          style={{ backgroundImage: `url(${dark? bg1 : bg})` }}
+          style={{ backgroundImage: `url(${dark ? bg1 : bg})` }}
         >
           <img
             src={pic}
@@ -27,7 +27,11 @@ export default function Banner({ dark }) {
           <h1 className="font-poppins font-bold text-[63px] text-headingColor">
             Kazi Mayzid
           </h1>
-          <p className="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent font-poppins font-semibold text-[26px]">
+          <p
+            className={`${
+              dark ? "text-gradient-white" : "text-gradient"
+            } font-poppins font-semibold text-[26px]`}
+          >
             <Typewriter
               words={[" MERN Stack Developer"]}
               loop={true}

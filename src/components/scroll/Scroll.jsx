@@ -39,7 +39,7 @@ export default function Scroll({ dark }) {
     <Container>
       <div data-aos="fade-up" className="pb-20">
         <div className="text-center mb-8">
-          <h1 className="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent font-poppins font-semibold text-[40px]">
+          <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
             My Skills
           </h1>
         </div>
