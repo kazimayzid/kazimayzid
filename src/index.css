@@ -1,31 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
-
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --color-detailsColor: #1C1E53;
-  --color-hoverColor: #484E5380;
+  --color-detailsColor: #1c1e53;
+  --color-hoverColor: #484e5380;
   --color-navtext: #050505;
-  --color-bg: #E0E8F6;
-  --color-borderColor: #484E5380;
-  --color-headingColor: #484E53;
-  --color-bghover: #484E53;
+  --color-bg: #e0e8f6;
+  --color-borderColor: #484e5380;
+  --color-headingColor: #484e53;
+  --color-bghover: #484e53;
 }
-
 
 @layer theme {
   .dark {
-    --color-navtext: #C1C1C1; 
-    --color-bg: #1A1A1A;
+    --color-navtext: #c1c1c1;
+    --color-bg: #1a1a1a;
     --color-dark-bg: #ffffff;
     --color-borderColor: rgba(79, 194, 247, 0.5);
     --color-hoverColor: rgba(79, 194, 247, 0.5);
-    --color-headingColor: #FFFFFF;
-    --color-detailsColor: #E1E1E1;
-    --color-bghover: #4FC3F7;
+    --color-headingColor: #ffffff;
+    --color-detailsColor: #e1e1e1;
+    --color-bghover: #4fc3f7;
   }
 }
 .text-gradient {
@@ -36,3 +34,18 @@
   @apply bg-gradient-to-r from-[#4FC3F7] to-[#F5F5F5] bg-clip-text text-transparent;
 }
 
+@keyframes borderPulse {
+  0% {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  }
+}
+
+.animate-borderPulse {
+  animation: borderPulse 1.5s ease-in-out infinite;
+}

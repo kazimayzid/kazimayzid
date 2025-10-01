@@ -46,7 +46,7 @@ export default function Projects({ dark }) {
   ];
   return (
     <>
-      <div className="relative w-full h-[1400px] mt-[150px]" data-aos="fade-up">
+      <div className="relative w-full h-[1200px] mt-[150px]" data-aos="fade-up">
         <div className="absolute inset-0 z-0 bg-transparent">
           <Particles
             particleColors={["#524453", "#54578585"]}
@@ -78,7 +78,7 @@ export default function Projects({ dark }) {
               <div
                 data-aos={item.animation}
                 key={i}
-                className="flex gap-x-[50px] mt-30 items-center justify-center"
+                className="flex gap-x-[50px] mt-15 items-center justify-center"
               >
                 <div className="w-[35%] h-[200px] rounded-[10px] overflow-hidden cursor-pointer">
                   <img

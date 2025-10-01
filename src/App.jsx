@@ -8,6 +8,8 @@ import About from "./components/about/About.jsx";
 import Scroll from "./components/scroll/Scroll.jsx";
 import Services from "./components/services/Services.jsx";
 import Projects from "./components/projects/Projects.jsx";
+import ContactMe from "./components/contactMe/ContactMe.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 function App() {
    const [dark, setDark] = useState(() => {
@@ -39,6 +41,8 @@ function App() {
         <Scroll dark={dark}/>
         <Projects dark={dark}/>
         <Services dark={dark}/>
+        <ContactMe dark={dark}/>
+        <Footer/>
       </div>
     </>
   );
