@@ -43,7 +43,7 @@ export default function Banner({ dark }) {
             />
           </p>
 
-          <div className="font-poppins font-medium text-[16px] sm:text-[19px] leading-[28px] sm:leading-[30px] text-headingColor text-center max-w-[90%] sm:max-w-[790px] mt-3">
+          <div className="font-poppins font-medium text-[16px] sm:text-[19px] leading-[28px] sm:leading-[30px] text-detailsColor text-center max-w-[90%] sm:max-w-[790px] mt-3">
             {showTypewriter && (
               <Typewriter
                 words={[
@@ -56,7 +56,7 @@ export default function Banner({ dark }) {
             )}
           </div>
 
-          <button className=" font-inter font-medium text-[15px] text-navtext border-borderColor px-[18px] py-[13px] border-[.5px] cursor-pointer mt-[40px] rounded-full">
+          <button className=" font-inter font-medium text-[15px] text-navtext border-borderColor px-[18px] py-[13px] border-[.5px] cursor-pointer mt-[40px] rounded-full hover:bg-hoverColor duration-300">
             Contact Me
           </button>
         </div>

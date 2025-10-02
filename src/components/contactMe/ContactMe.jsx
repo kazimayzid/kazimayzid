@@ -4,7 +4,7 @@ export default function ContactMe({ dark }) {
   return (
     <>
       <Container>
-        <div className="py-[100px]">
+        <div data-aos="fade-up" className="py-[100px]">
           <div className="text-center">
             <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
               Get In Touch
@@ -57,7 +57,7 @@ export default function ContactMe({ dark }) {
                 id="message"
                 rows="4"
                 className="block p-2.5 w-full text-sm text-detailsColor bg-bg rounded-lg border border-borderColor dark:placeholder-gray-400 focus:outline-none"
-                placeholder="Write your thoughts here..."
+                placeholder="Write your message here..."
               ></textarea>
             </div>
             <button className="font-poppins font-normal text-[14px] text-navtext border-[1px] border-borderColor px-4 py-1 hover:bg-bghover cursor-pointer hover:text-bg duration-300 rounded-lg">Get in Touch</button>

@@ -41,7 +41,7 @@ export default function Services({ dark }) {
   return (
     <>
       <Container>
-        <div className="py-[100px]">
+        <div className="pt-[100px]">
           <div className="text-center">
             <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
               What I do
@@ -60,15 +60,10 @@ export default function Services({ dark }) {
                 data-aos={item.animation}
                 data-aos-duration={item.duration}
                 key={i}
-                className="relative p-6 flex flex-col items-center text-center rounded-[20px] border-2 border-[var(--color-borderColor)]
+                className=" p-6 flex flex-col items-center text-center rounded-[20px] border-2 border-[var(--color-borderColor)]
              bg-white dark:bg-[var(--color-bg)] overflow-hidden cursor-pointer group transition-shadow duration-300
              hover:shadow-xl"
               >
-                <div
-                  className="absolute inset-0 rounded-[20px] border-2 border-[var(--color-borderColor)] opacity-0
-                  transition-opacity duration-500 group-hover:opacity-100 animate-borderPulse pointer-events-none"
-                ></div>
-
                 <div className="relative z-10 flex flex-col items-center">
                   <img
                     src={item.img}

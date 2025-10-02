@@ -1,5 +1,6 @@
 import Container from "../container/Container";
 import { Moon, Sun } from "lucide-react";
+import logo from "../../assets/logo.png"
 export default function Navbar({ dark, setDark }) {
   return (
     <>
@@ -10,10 +11,10 @@ export default function Navbar({ dark, setDark }) {
         >
           <div>
             <a href="#" className="font-normal text-[32px] text-navtext">
-              mayzid
+              <img src={logo} alt="#"  className="w-[200px] h-[40px]"/>
             </a>
           </div>
-          <div className="flex gap-x-[50px] font-inter font-medium text-lg text-navtext border-[1px] border-borderColor rounded-full px-0.5 py-0.5">
+          <div className="flex gap-x-[50px] font-inter font-medium text-lg text-navtext border-[1px] border-borderColor rounded-full px-1 py-1">
             <a
               href="#"
               className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4"
@@ -46,7 +47,7 @@ export default function Navbar({ dark, setDark }) {
             </a>
           </div>
           <div className="flex justify-center items-center gap-x-2">
-            <button className="flex gap-x-[50px] font-inter font-medium text-lg text-navtext border-[1px] border-borderColor hover:border-hoverColor px-[26px] py-[5px] rounded-[10px] cursor-pointer hover:scale-110 duration-500">
+            <button className="flex gap-x-[50px] font-inter font-medium text-lg text-navtext border-[1px] border-borderColor hover:border-hoverColor px-[26px] py-[5px] rounded-[10px] cursor-pointer hover:bg-hoverColor duration-500">
               Contact
             </button>
             <div className="flex items-center gap-2">

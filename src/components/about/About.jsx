@@ -41,7 +41,7 @@ export default function About({dark}) {
             </span>
           </div>
           <div>
-            <button className=" font-inter font-medium text-[15px] text-navtext border-borderColor px-[18px] py-[13px] border-[.5px] cursor-pointer mt-[40px] rounded-full">
+            <button className=" font-inter font-medium text-[15px] text-navtext border-borderColor px-[18px] py-[13px] border-[.5px] cursor-pointer mt-[40px] rounded-full hover:bg-hoverColor duration-300">
               Download Resume
             </button>
           </div>
