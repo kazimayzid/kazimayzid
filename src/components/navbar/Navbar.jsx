@@ -72,7 +72,7 @@ export default function Navbar({ dark, setDark }) {
           </div>
         </Container>
       </header>
-      <div className="md:hidden py-4 px-1 fixed w-full top-0 z-50 bg-bg  shadow-md transition-colors duration-300">
+      <div className="md:hidden py-4 px-1 fixed w-screen md:w-full top-0 z-50 bg-bg  shadow-md transition-colors duration-300">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
             <a href="#">
@@ -105,7 +105,7 @@ export default function Navbar({ dark, setDark }) {
         </div>
       </div>
       {show && (
-        <div className=" fixed py-5 px-10 ml-auto top-0 z-50 bg-bg  shadow-md transition-colors duration-300 flex flex-col items-center  mt-15 backdrop-blur-md text-3xl w-full text-detailsColor">
+        <div className=" fixed py-5 px-10 ml-auto top-0 z-50 bg-bg  shadow-md transition-colors duration-300 flex flex-col items-center  mt-15 backdrop-blur-md text-3xl w-screen md:w-full text-detailsColor">
           {navLinks.map((section) => (
             <Link
               key={section}
