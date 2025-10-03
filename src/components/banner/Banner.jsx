@@ -15,9 +15,9 @@ export default function Banner({ dark }) {
     <>
       <Container>
         <div
-         id="banner"
+          id="banner"
           data-aos="fade-up"
-          className="mt-7  bg-center  bg-no-repeat pt-[137px] flex flex-col justify-center items-center pb-[105px]"
+          className="mt-14 md:mt-18 w-screen md:w-full  bg-center  bg-no-repeat pt-[40px] md:pt-[137px] flex flex-col justify-center items-center pb-[105px] object-center"
           style={{ backgroundImage: `url(${dark ? bg1 : bg})` }}
         >
           <img
@@ -44,7 +44,7 @@ export default function Banner({ dark }) {
             />
           </p>
 
-          <div className="font-poppins font-medium text-[16px] sm:text-[19px] leading-[28px] sm:leading-[30px] text-detailsColor text-center max-w-[90%] sm:max-w-[790px] mt-3">
+          <div className="font-poppins font-medium text-[16px] sm:text-[19px] leading-[28px] sm:leading-[30px] text-detailsColor text-center max-w-[] md:max-w-[790px] mt-3">
             {showTypewriter && (
               <Typewriter
                 words={[

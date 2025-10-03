@@ -16,6 +16,7 @@ import nodejs from "../../assets/nodejs.svg";
 import expressjs from "../../assets/express-js.svg";
 import mongodb from "../../assets/mongodb.png";
 import { div } from "framer-motion/client";
+import { useEffect, useState } from "react";
 
 const logos = [
   { icon: figma, title: "Figma" },
@@ -36,16 +37,35 @@ const logos = [
 
 export default function Scroll({ dark }) {
   const gradient = dark ? "#1A1A1A" : "#E0E8F6";
+
+  const [gradientWidth, setGradientWidth] = useState(
+    window.innerWidth < 640 ? 50 : 400
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setGradientWidth(50); 
+      } else {
+        setGradientWidth(400); 
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <Container>
-      <div id="skills" data-aos="fade-up">
+      <div id="skills" data-aos="fade-up" className="w-screen md:w-full">
         <div className="text-center mb-20">
           <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
             My Skills
           </h1>
         </div>
         <Marquee
-          gradientWidth={400}
+          gradientWidth={gradientWidth}
           gradientColor={gradient}
           pauseOnClick="true"
           gradient="true"

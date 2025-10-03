@@ -4,7 +4,7 @@ export default function ContactMe({ dark }) {
   return (
     <>
       <Container>
-        <div id="contact" data-aos="fade-up" className="py-[100px]">
+        <div id="contact" data-aos="fade-up" className="py-[100px] md:w-full w-screen px-2 md:px-0 ">
           <div className="text-center">
             <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
               Get In Touch
@@ -17,8 +17,8 @@ export default function ContactMe({ dark }) {
               Lets work together
             </span>
           </div>
-          <div className="mt-10 flex flex-col gap-y-5 items-center">
-            <div className="relative w-[400px]">
+          <div className="mt-10 flex flex-col gap-y-5 items-center ">
+            <div className="relative w-screen md:w-[400px] md:px-0 px-5">
               <input
                 type="text"
                 id="name"
@@ -27,12 +27,12 @@ export default function ContactMe({ dark }) {
               />
               <label
                 for="name"
-                className="absolute text-sm text-headingColor duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-bg px-2 peer-focus:px-2 peer-focus:text-headingColor peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                className="absolute text-sm text-headingColor duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-bg px-2 peer-focus:px-2 peer-focus:text-headingColor peer-placeholder-shown:left-6 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
                 Name
               </label>
             </div>
-            <div className="relative w-[400px]">
+            <div className="relative w-screen md:w-[400px] md:px-0 px-5">
               <input
                 type="email"
                 id="email"
@@ -41,12 +41,12 @@ export default function ContactMe({ dark }) {
               />
               <label
                 for="email"
-                className="absolute text-sm text-headingColor duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-bg px-2 peer-focus:px-2 peer-focus:text-headingColor peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                className="absolute text-sm text-headingColor duration-300 transform -translate-y-4 scale-75 top-2 z-10 peer-placeholder-shown:left-6 md:peer-placeholder-shown:left-5 origin-[0] bg-bg px-2 peer-focus:px-2 peer-focus:text-headingColor peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
                 Email
               </label>
             </div>
-            <div className="w-[400px] mt-5">
+            <div className=" w-screen md:w-[400px] mt-5 md:px-0 px-5">
               <label
                 for="message"
                 className="block mb-2 text-[14px] font-medium text-headingColor font-poppins"

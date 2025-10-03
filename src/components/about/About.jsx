@@ -7,7 +7,7 @@ export default function About({dark}) {
         <div
         id="about"
           data-aos="fade-up"
-          className="flex flex-col items-center mt-[95px] pb-[110px]"
+          className="flex flex-col w-screen md:w-full items-center md:mt-[95px] pb-[110px]"
         >
           <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
             About Me

@@ -41,7 +41,7 @@ export default function Services({ dark }) {
   return (
     <>
       <Container>
-        <div id="services" className="pt-[100px]">
+        <div id="services" className="pt-[100px] w-screen md:w-full md:px-0 px-2">
           <div className="text-center">
             <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
               What I do
@@ -54,7 +54,7 @@ export default function Services({ dark }) {
               My Services
             </span>
           </div>
-          <div className="mt-10 flex gap-x-5 duration-500">
+          <div className="mt-10 flex md:flex-row flex-col gap-y-3 gap-x-5 duration-500">
             {serviceData.map((item, i) => (
               <div
                 data-aos={item.animation}

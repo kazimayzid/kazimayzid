@@ -46,7 +46,7 @@ export default function Projects({ dark }) {
   ];
   return (
     <>
-      <div id="projects" className="relative w-full h-[1200px] mt-[150px]" data-aos="fade-up">
+      <div id="projects" className="relative w-screen px-1 md:px-0 md:w-full h-[1850px] md:h-[1200px] mt-10 md:mt-[150px]" data-aos="fade-up">
         <div className="absolute inset-0 z-0 bg-transparent">
           <Particles
             particleColors={["#524453", "#54578585"]}
@@ -62,7 +62,7 @@ export default function Projects({ dark }) {
 
         <div className="absolute inset-0 z-10 bg-transparent">
           <Container>
-            <div className="text-center">
+            <div className="text-center w-screen md:w-full ">
               <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
                 Projects
               </h1>
@@ -78,25 +78,25 @@ export default function Projects({ dark }) {
               <div
                 data-aos={item.animation}
                 key={i}
-                className="flex gap-x-[50px] mt-15 items-center justify-center"
+                className="md:flex gap-x-[50px] mt-15 items-center justify-center "
               >
-                <div className="w-[35%] h-[200px] rounded-[10px] overflow-hidden cursor-pointer">
+                <div className="w-screen md:w-[35%] h-[200px] rounded-[10px] overflow-hidden cursor-pointer md:px-0 px-5">
                   <img
-                    className="w-full h-full object-cover rounded-xl object-center 
-               transform transition duration-300 hover:scale-105"
+                    className="w-screen md:w-full h-full object-cover rounded-xl object-center 
+               transform transition duration-300 hover:scale-105 "
                     src={item.img}
                     alt="#"
                   />
                 </div>
-                <div className="w-[65%]">
+                <div className= "w-screen md:w-[65%] text-center md:text-start md:px-0 px-1">
                   <h1 className="font-inter font-bold text-navtext text-[30px]">
                     {item.title}
                   </h1>
                   <p className="font-poppins font-normal text-detailsColor mt-5">
                     {item.desc}
                   </p>
-                  <div className="mt-5 flex gap-x-7 items-center ">
-                    <div className="flex items-center gap-x-3">
+                  <div className="mt-5 md:flex gap-x-7 items-center ">
+                    <div className="md:mb-0 mb-4 flex items-center justify-center md:justify-start gap-x-3 ">
                       <a href={item.livelink}>
                         <Link className="text-navtext hover:text-headingColor duration-300 cursor-pointer" />
                       </a>
@@ -105,7 +105,7 @@ export default function Projects({ dark }) {
                       </a>
                     </div>
 
-                    <div className="flex gap-x-2">
+                    <div className="flex flex-wrap gap-y-2 gap-x-2 md:w-full w-screen justify-center md:justify-start">
                       {item.tags.map((item) => (
                         <span className="font-poppins font-normal text-[14px] text-navtext border-[1px] border-borderColor px-4 py-0.5 hover:bg-bghover cursor-pointer hover:text-bg duration-300 rounded-full">
                           {item}

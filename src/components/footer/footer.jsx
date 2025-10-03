@@ -15,18 +15,18 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-white dark:bg-[var(--color-bg)] border-t-[0.5px] border-[var(--color-borderColor)] py-6">
+    <footer className="bg-white dark:bg-[var(--color-bg)] border-t-[0.5px] border-[var(--color-borderColor)] py-6 ">
       <Container>
         <div
           data-aos="fade-up"
-          className="flex flex-col md:flex-row items-center justify-between gap-4"
+          className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-4 w-screen md:w-full"
         >
-          <span className="text-navtext text-sm md:text-base font-poppins">
+          <span className="hidden md:block text-navtext text-sm md:text-base font-poppins">
             © 2025 All rights reserved to Kazi Mayzid.
           </span>
 
           <div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-center justify-center md:justify-start">
               {links.map((item, i) => {
                 const Icon = item.icon;
                 return (
@@ -42,7 +42,7 @@ export default function Footer() {
                 );
               })}
             </div>
-            <div className="mt-2">
+            <div className="mt-2 flex flex-col justify-center items-center md:items-start">
               <div className="flex items-center gap-x-2">
                 <img src={whatsApp} alt="#" className="w-[20px] h-[20px]" />
                 <p className="font-inter font-normal text-[16px] text-headingColor">
@@ -57,6 +57,9 @@ export default function Footer() {
               </div>
             </div>
           </div>
+          <span className="block md:hidden text-navtext text-sm md:text-base font-poppins">
+            © 2025 All rights reserved to Kazi Mayzid.
+          </span>
         </div>
       </Container>
     </footer>
