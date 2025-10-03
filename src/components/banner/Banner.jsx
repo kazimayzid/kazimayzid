@@ -15,6 +15,7 @@ export default function Banner({ dark }) {
     <>
       <Container>
         <div
+         id="banner"
           data-aos="fade-up"
           className="mt-7  bg-center  bg-no-repeat pt-[137px] flex flex-col justify-center items-center pb-[105px]"
           style={{ backgroundImage: `url(${dark ? bg1 : bg})` }}

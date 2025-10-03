@@ -38,7 +38,7 @@ export default function Scroll({ dark }) {
   const gradient = dark ? "#1A1A1A" : "#E0E8F6";
   return (
     <Container>
-      <div data-aos="fade-up">
+      <div id="skills" data-aos="fade-up">
         <div className="text-center mb-20">
           <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
             My Skills

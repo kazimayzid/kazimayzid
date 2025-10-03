@@ -5,6 +5,7 @@ export default function About({dark}) {
     <>
       <Container>
         <div
+        id="about"
           data-aos="fade-up"
           className="flex flex-col items-center mt-[95px] pb-[110px]"
         >

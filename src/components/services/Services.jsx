@@ -41,7 +41,7 @@ export default function Services({ dark }) {
   return (
     <>
       <Container>
-        <div className="pt-[100px]">
+        <div id="services" className="pt-[100px]">
           <div className="text-center">
             <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
               What I do

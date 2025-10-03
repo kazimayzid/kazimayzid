@@ -4,7 +4,7 @@ export default function ContactMe({ dark }) {
   return (
     <>
       <Container>
-        <div data-aos="fade-up" className="py-[100px]">
+        <div id="contact" data-aos="fade-up" className="py-[100px]">
           <div className="text-center">
             <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
               Get In Touch

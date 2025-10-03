@@ -1,55 +1,80 @@
 import Container from "../container/Container";
 import { Moon, Sun } from "lucide-react";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
+import { Link } from "react-scroll";
+
 export default function Navbar({ dark, setDark }) {
   return (
     <>
       <Container>
         <div
+          id="navbar"
           data-aos="fade-up"
-          className="flex justify-between items-center pt-[30px] "
+          className="flex justify-between items-center pt-[30px] sticky z-40 top-0"
         >
           <div>
             <a href="#" className="font-normal text-[32px] text-navtext">
-              <img src={logo} alt="#"  className="w-[200px] h-[40px]"/>
+              <img src={logo} alt="Logo" className="w-[200px] h-[40px]" />
             </a>
           </div>
+
           <div className="flex gap-x-[50px] font-inter font-medium text-lg text-navtext border-[1px] border-borderColor rounded-full px-1 py-1">
-            <a
-              href="#"
-              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4"
+            <Link
+              to="navbar"
+              smooth={true}
+              duration={500}
+              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4 cursor-pointer"
             >
               Home
-            </a>
-            <a
-              href="#"
-              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4"
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4 cursor-pointer"
             >
               About
-            </a>
-            <a
-              href="#"
-              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4"
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4 cursor-pointer"
             >
               Projects
-            </a>
-            <a
-              href="#"
-              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4"
+            </Link>
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4 cursor-pointer"
             >
               Services
-            </a>
-            <a
-              href="#"
-              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4"
+            </Link>
+            <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="hover:border-hoverColor hover:border-[.5px] border-transparent border-[.5px] duration-200 rounded-full px-4 cursor-pointer"
             >
-              Resume
-            </a>
+              Skills
+            </Link>
           </div>
+
           <div className="flex justify-center items-center gap-x-2">
-            <button className="flex gap-x-[50px] font-inter font-medium text-lg text-navtext border-[1px] border-borderColor hover:border-hoverColor px-[26px] py-[5px] rounded-[10px] cursor-pointer hover:bg-hoverColor duration-500">
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="flex gap-x-[50px] font-inter font-medium text-lg text-navtext border-[1px] border-borderColor hover:border-hoverColor px-[26px] py-[5px] rounded-[10px] cursor-pointer hover:bg-hoverColor duration-500"
+            >
               Contact
-            </button>
+            </Link>
             <div className="flex items-center gap-2">
               <span className="text-sm text-navtext hidden sm:block">
                 {dark ? "Light" : "Dark"}

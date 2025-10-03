@@ -46,7 +46,7 @@ export default function Projects({ dark }) {
   ];
   return (
     <>
-      <div className="relative w-full h-[1200px] mt-[150px]" data-aos="fade-up">
+      <div id="projects" className="relative w-full h-[1200px] mt-[150px]" data-aos="fade-up">
         <div className="absolute inset-0 z-0 bg-transparent">
           <Particles
             particleColors={["#524453", "#54578585"]}
