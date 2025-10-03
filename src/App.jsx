@@ -34,7 +34,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className="bg-bg">
+      <div className="bg-bg overflow-x-hidden">
         <Navbar dark={dark} setDark={setDark}/>
         <Banner dark={dark}/>
         <About dark={dark}/>
