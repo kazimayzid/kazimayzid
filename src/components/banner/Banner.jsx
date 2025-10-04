@@ -17,7 +17,7 @@ export default function Banner({ dark }) {
         <div
           id="banner"
           data-aos="fade-up"
-          className="mt-14 md:mt-18 w-screen md:w-full  bg-center  bg-no-repeat pt-[40px] md:pt-[137px] flex flex-col justify-center items-center pb-[105px] object-center"
+          className="mt-14 md:mt-18 w-screen md:w-full  bg-center  bg-no-repeat pt-[40px] md:pt-[137px] flex flex-col justify-center items-center pb-[105px] object-center px-4"
           style={{ backgroundImage: `url(${dark ? bg1 : bg})` }}
         >
           <img

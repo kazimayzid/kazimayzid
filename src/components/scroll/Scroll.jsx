@@ -56,7 +56,7 @@ export default function Scroll({ dark }) {
   }, []);
   
   return (
-    <div id="skills" className="w-full overflow-x-hidden">
+    <div id="skills" className="w-full overflow-hidden">
       <Container>
         <div data-aos="fade-up" className="w-full">
           <div className="text-center mb-20">

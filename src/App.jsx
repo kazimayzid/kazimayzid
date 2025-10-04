@@ -10,6 +10,7 @@ import Services from "./components/services/Services.jsx";
 import Projects from "./components/projects/Projects.jsx";
 import ContactMe from "./components/contactMe/ContactMe.jsx";
 import Footer from "./components/footer/footer.jsx";
+import BackToTop from "./components/backToTop/BackToTop.jsx";
 
 function App() {
    const [dark, setDark] = useState(() => {
@@ -34,7 +35,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className="bg-bg overflow-x-hidden">
+      <div className="bg-bg overflow-hidden">
         <Navbar dark={dark} setDark={setDark}/>
         <Banner dark={dark}/>
         <About dark={dark}/>
@@ -43,6 +44,7 @@ function App() {
         <Services dark={dark}/>
         <ContactMe dark={dark}/>
         <Footer/>
+        <BackToTop dark={dark}/>
       </div>
     </>
   );
