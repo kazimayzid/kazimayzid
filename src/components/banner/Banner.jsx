@@ -25,13 +25,13 @@ export default function Banner({ dark }) {
             alt="#img"
             className="w-[222px] h-[222px] rounded-full bg-fuchsia-600 object-cover"
           />
-          <h1 className="font-poppins font-bold text-[63px] text-headingColor">
+          <h1 className="font-poppins font-bold text-[42px] md:text-[63px] text-headingColor">
             Kazi Mayzid
           </h1>
           <p
             className={`${
               dark ? "text-gradient-white" : "text-gradient"
-            } font-poppins font-semibold text-[26px]`}
+            } font-poppins font-semibold text-[18px] md:text-[26px]`}
           >
             <Typewriter
               words={[" MERN Stack Developer"]}
@@ -44,7 +44,7 @@ export default function Banner({ dark }) {
             />
           </p>
 
-          <div className="font-poppins font-medium text-[16px] sm:text-[19px] leading-[28px] sm:leading-[30px] text-detailsColor text-center max-w-[] md:max-w-[790px] mt-3">
+          <div className="font-poppins font-medium text-[14px] md:text-[19px] leading-[28px] sm:leading-[30px] text-detailsColor text-center max-w-[] md:max-w-[790px] mt-3">
             {showTypewriter && (
               <Typewriter
                 words={[

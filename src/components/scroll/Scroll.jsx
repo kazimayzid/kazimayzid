@@ -60,7 +60,7 @@ export default function Scroll({ dark }) {
       <Container>
         <div data-aos="fade-up" className="w-full">
           <div className="text-center mb-20">
-            <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
+            <h1 className="font-inter font-extrabold text-[28px] md:text-[45px] text-headingColor">
               My Skills
             </h1>
           </div>

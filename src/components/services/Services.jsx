@@ -43,7 +43,7 @@ export default function Services({ dark }) {
       <Container>
         <div id="services" className="pt-[100px] w-screen md:w-full md:px-0 px-2">
           <div className="text-center">
-            <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
+            <h1 className="font-inter font-extrabold text-[28px] md:text-[45px] text-headingColor">
               What I do
             </h1>
             <span
@@ -60,7 +60,7 @@ export default function Services({ dark }) {
                 data-aos={item.animation}
                 data-aos-duration={item.duration}
                 key={i}
-                className=" p-6 flex flex-col items-center text-center rounded-[20px] border-2 border-[var(--color-borderColor)]
+                className=" p-5 flex flex-col items-center text-center rounded-[20px] border-2 border-[var(--color-borderColor)]
              bg-white dark:bg-[var(--color-bg)] overflow-hidden cursor-pointer group transition-shadow duration-300
              hover:shadow-xl"
               >
@@ -76,7 +76,7 @@ export default function Services({ dark }) {
 
                   <div className="w-full h-[1px] bg-[var(--color-borderColor)] my-4"></div>
 
-                  <p className="font-poppins text-[var(--color-detailsColor)] text-base md:text-[16px]">
+                  <p className="font-poppins text-[var(--color-detailsColor)] text-base md:text-[14px]">
                     {item.details}
                   </p>
                 </div>

@@ -63,7 +63,7 @@ export default function Projects({ dark }) {
         <div className="absolute inset-0 z-10 bg-transparent">
           <Container>
             <div className="text-center w-screen md:w-full ">
-              <h1 className="font-inter font-extrabold text-[45px] text-headingColor">
+              <h1 className="font-inter font-extrabold text-[28px] md:text-[45px] text-headingColor">
                 Projects
               </h1>
               <span

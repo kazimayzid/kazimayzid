@@ -40,7 +40,7 @@ export default function Navbar({ dark, setDark }) {
                   offset={-80}
                   className="relative px-3 py-1 cursor-pointer group transition-all"
                 >
-                  <span className="relative z-10">{section}</span>
+                  <span className="relative z-10 font-inter">{section}</span>
                   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-hoverColor transition-all group-hover:w-full"></span>
                 </Link>
               ))}
