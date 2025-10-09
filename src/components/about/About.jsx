@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import Container from "../container/Container";
 
 export default function About({dark}) {
+   useEffect(() => {
+    document.title = "About";
+  }, []);
   return (
     <>
       <Container>

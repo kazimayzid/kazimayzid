@@ -33,6 +33,11 @@ function App() {
   useEffect(() => {
     AOS.init({ duration: 1200, offset: 100, delay: 200, once: true });
   }, []);
+
+   useEffect(() => {
+    document.title = " Kazi mayzid";
+  }, []);
+
   return (
     <>
       <div className="bg-bg overflow-hidden">

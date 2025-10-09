@@ -48,7 +48,7 @@ export default function Banner({ dark }) {
             {showTypewriter && (
               <Typewriter
                 words={[
-                  "Hi, I’m Kazi Maizid, a curious and driven individual passionate about technology and digital innovation. I enjoy learning, solving problems, and creating meaningful solutions. Adaptable and collaborative, I thrive in dynamic environments and strive for growth and excellence in every project I take on, always aiming to make a positive impact....",
+                  "A curious and driven individual passionate about technology and digital innovation. I enjoy learning, solving problems, and creating meaningful solutions. Adaptable and collaborative, I thrive in dynamic environments and strive for growth and excellence in every project I take on, always aiming to make a positive impact....",
                 ]}
                 loop={1}
                 cursor={false}
