@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
             <div className="mt-2 flex flex-col justify-center items-center md:items-start">
               <div className="flex items-center gap-x-2">
-                <img src={whatsApp} alt="#" className="w-[20px] h-[20px]" />
+                <img src={whatsApp} alt="#" className="w-[25px] h-[25px]" />
                 <p className="font-inter font-normal text-[16px] text-headingColor">
                   01314033280
                 </p>
